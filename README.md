@@ -14,4 +14,4 @@ Explore the following sections:
 
 Feel free to explore and reach out with any questions!
 
-**Contact**: [LinkedIn](https://linkedin.com/in/wjahatsyed) | [Your Email](mailto:wajahatsyed1257@gmail.com)
+**Contact**: [LinkedIn](https://linkedin.com/in/wjahatsyed) | [Email](mailto:wajahatsyed1257@gmail.com)
