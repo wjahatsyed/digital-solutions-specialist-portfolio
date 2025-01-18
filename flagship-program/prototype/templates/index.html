@@ -1,0 +1,26 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+</head>
+<body>
+    <h1>Inventory Dashboard</h1>
+    <p>Click the button below to view predictive analytics.</p>
+    <button id="predict-btn">Get Prediction</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('predict-btn').addEventListener('click', async () => {
+            const response = await fetch('/predict');
+            const data = await response.json();
+            document.getElementById('result').innerHTML = `
+                <p>Mean Inventory: ${data.mean_inventory}</p>
+                <p>Max Inventory: ${data.max_inventory}</p>
+                <p>Recommendation: ${data.recommendation}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
